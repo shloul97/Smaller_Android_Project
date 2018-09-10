@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Coffee Price</string>
+    <string name="topping_text">TOPPING</string>
+    <string name="quantity_text">QUANTITY</string>
+    <string name="orderSummry_Text">ORDER SUMMRY</string>
+    <string name="thankYou">Thank You!</string>
+    <string name="total_text">Total</string>
+    <string name="topping1">More Sugar</string>
+    <string name="topping2">Milk</string>
+    <string name="name">Name</string>
+</resources>

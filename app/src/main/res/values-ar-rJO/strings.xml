@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="topping_text" translatable="false">الاضافات</string>
+    <string name="quantity_text" translatable="false">الكمية</string>
+    <string name="orderSummry_Text">ملخص الطلب</string>
+    <string name="thankYou">شكراً لك</string>
+    <string name="total_text">المجموع</string>
+    <string name="topping1">مع الكريمة المخفوقة</string>
+    <string name="topping2">مع طبقة الشوكولاته</string>
+    <string name="name">الإسم</string>
+</resources>

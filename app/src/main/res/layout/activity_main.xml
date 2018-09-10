@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Enter Client Name"
+                android:textColor="#ffffff"
+                android:textColorHint="#686767" />
+
+            <TextView
+                android:id="@+id/topping_text_view"
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/topping_text" />
+
+
+            <CheckBox
+
+                android:id="@+id/whippedCream_checkBox"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffffff"
+                android:paddingLeft="24dp"
+                android:text="@string/topping1" />
+
+            <CheckBox
+                android:id="@+id/choclate_checkBox"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffffff"
+                android:paddingLeft="24dp"
+                android:text="@string/topping2" />
+
+            <TextView
+                android:id="@+id/quantitytxt"
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:paddingStart="0dp"
+                android:text="@string/quantity_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+
+                    android:id="@+id/orderplus"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/picetxt"
+                    android:onClick="increment"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/picetxt"
+                    style="@style/smallText"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="#4d3002"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#f20000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/orderminus"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/picetxt"
+                    android:onClick="decrement"
+                    android:text="-" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="2dp"
+                android:layout_gravity="start"
+                android:background="#959292"
+                android:paddingStart="16dp"
+                android:layout_marginStart="16dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/quantityPrice"
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingStart="16dp"
+
+                android:text="@string/orderSummry_Text"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="2dp"
+                android:layout_gravity="start"
+                android:background="#959292"
+                android:paddingStart="16dp"
+                android:layout_marginStart="16dp"></LinearLayout>
+
+            <TextView
+                android:id="@+id/order_summary_text_view"
+                style="@style/smallText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                android:text="$10"
+                android:textSize="20dp" />
+
+            <Button
+
+                android:id="@+id/orderbu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="submitOrder"
+                android:text="Order"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
